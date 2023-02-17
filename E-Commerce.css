@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.cover-page{
+    min-height: 100vh;
+    min-width: 100%;
+    background-image: url("open-source-ecommerce.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.cover-page::before {
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 3;
+}
+
+nav a{
+    z-index: 3; 
+}
+
+nav a img{
+    width: 150px;
+
+}
+  
+.header-pages{
+    flex: 1;
+    text-align: right;
+    z-index: 3;
+}
+
+.header-pages ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-size: 2rem;
+    z-index: 3;
+}
+.header-pages ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 3;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    z-index: 3;
+}
+
+.text-box h1 {    
+    font-size: 62px;
+    z-index: 3;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    z-index: 3;
+}
+
+.button{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: #fff solid 1px;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.items h1{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 5rem; 
+    margin-bottom: 10rem;
+}
+
+.products a img{
+    margin: 10px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.products img{
+    margin: 10px;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+.products h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products a img{
+        width: 17rem;
+        height: 17rem;
+    }
+}
